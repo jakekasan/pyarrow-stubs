@@ -1490,7 +1490,7 @@ class _PandasConvertible(_Weakrefable, Generic[_ConvertAs]):
     def to_pandas(
         self,
         memory_pool: MemoryPool | None = None,
-        categories: list | None = None,
+        categories: list[str] | None = None,
         strings_to_categorical: bool = False,
         zero_copy_only: bool = False,
         integer_object_nulls: bool = False,
